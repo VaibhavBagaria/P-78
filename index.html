@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>The Family Member Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+    <h1>The Family Book</h1>
+    <br><br><br><br>
+    <img id="FP" src="Family Book.jpg">
+    <br><br><br><br>
+    <h2 id="FN">Family Book</h2>
+    <button onclick="names()">Next</button>
+</center>
+    <script>
+        var image = ["Deepak.jpeg","Raksha.jpeg","Me.jpeg","Samaira.jpeg","Dadi.jpeg","Baba.jpeg"]
+
+        var family_name = ["Deepak Bagaria", "Raksha Bagaria", "Vaibhav Bagaria", "Samaira Bagaria", "Rajkumaria Bagaria", "Ram Charan Bagaria"]
+        var i = 0
+        function names() {
+            document.getElementById("FP").src = image[i];
+
+            document.getElementById("FN").innerHTML = family_name[i];
+            i++;
+            if (i > 5) {
+                i = 0;
+            }
+        }
+    </script>
+</body>
+<html>
